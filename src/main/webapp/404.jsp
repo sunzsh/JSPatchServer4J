@@ -1,0 +1,1 @@
+<%response.setContentType("text/javascript; charset=utf-8");out.print("");%>

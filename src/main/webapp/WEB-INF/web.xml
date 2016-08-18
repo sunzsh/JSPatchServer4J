@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>MDDoc Web Application</display-name>
+
+    <servlet>
+       <servlet-name>jspatch</servlet-name>
+       <servlet-class>com.dhgh.jspatch.servlet.JSServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+       <servlet-name>jspatch</servlet-name>
+       <url-pattern>*.js</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+       <servlet-name>update-api</servlet-name>
+       <servlet-class>com.dhgh.jspatch.servlet.UpdateServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+       <servlet-name>update-api</servlet-name>
+       <url-pattern>/update.do</url-pattern>
+    </servlet-mapping>
+    
+    <error-page>
+    	<error-code>403</error-code>
+    	<location>/403.jsp</location>
+    </error-page>
+    <error-page>
+    	<error-code>404</error-code>
+    	<location>/404.jsp</location>
+    </error-page>
+    
+	<welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
