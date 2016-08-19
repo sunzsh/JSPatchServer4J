@@ -18,7 +18,7 @@
     + 修改 WEB-INF/classes 下的 config.properties 
         * 配置js文件的根路径
     + 修改 WEB-INF/classes 下的 keys.properties
-        * 针对不同项目配置不同的密钥，密钥长度必须24位
+        * 针对不同项目配置不同的密钥，密钥长度必须24位（下文中《js文件路径规则》提到的项目名）
 - 配置（自己有git私服）
     + 在git私服（我用的是 [gitolite](http://gitolite.com/gitolite/index.html)）上创建一个专门用于存放js文件的版本库。
     + 将上面 config.properties 配置的目录 关联到此私服（使其直接git pull的就能获取到最新的js内容 **关键**）
@@ -49,5 +49,5 @@ fi
     + 2.0.2.js
 
 
-> iOS 端代码正在整理，稍候上传...
+> [配套IOS版传送门](https://github.com/shaozepeng/JSPatch-IOS) （包含解密规则）
 
