@@ -49,5 +49,5 @@ fi
     + 2.0.2.js
 
 
-> [配套IOS版传送门](https://github.com/shaozepeng/JSPatch-IOS) （包含解密规则）
+> [配套Objective-C版源码传送门](https://github.com/shaozepeng/JSPatch-IOS) （包含解密规则）
 
